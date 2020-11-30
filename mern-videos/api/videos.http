@@ -1,0 +1,33 @@
+
+@api = http://localhost:4000
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/5fc2be8cf4e63527a8dd711d
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=jK2aIUmmdP4",
+    "title": "Different Heaven & EH!DE - My Heart",
+    "description": "Different Heaven & EH!DE - My Heart [NCS Release]"
+}
+
+###
+DELETE {{api}}/videos/5fc3feabdd585d35448f074d
+
+
+###
+PUT  {{api}}/videos/5fc2be8cf4e63527a8dd711d
+Content-Type: application/json
+
+{
+    "title": "My heart"
+}
+
+
+
